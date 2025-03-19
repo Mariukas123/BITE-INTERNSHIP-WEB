@@ -20,7 +20,7 @@ function bubbleSort($file, $sort) {
     for ($i = 0; $i < count($file); $i++) {
         for ($j = 0; $j < count($file) - 1; $j++) {
 
-            // check if $sort is ASC or DESC
+            // check if $sort is ASC order
             if ($sort == "ASC") {
                 if ($file[$j] > $file[$j + 1]) {
                     $temp = $file[$j];
@@ -29,7 +29,7 @@ function bubbleSort($file, $sort) {
                 }
             }
 
-            // check if $sort is ASC or DESC
+            // check if $sort is DESC order
             if ($sort == "DESC") {
                 if ($file[$j] < $file[$j + 1]) {
                     $temp = $file[$j];
