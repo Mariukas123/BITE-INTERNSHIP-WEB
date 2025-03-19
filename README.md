@@ -1,64 +1,34 @@
 # Algorithm and Web Development Assessment
 
-## Task Description:
-1. Read a list of integers from the provided 'input.txt' file (one number per line)
-2. Sort the list in ascending order
-3. Create a simple web page that:
-   - Processes the file and sorting logic on the backend using PHP
-   - Displays the sorted list on a web page
-   - Shows the highest number from the list in a form input
-   - Implements functionality to increase or decrease this value by 5
-   - Ensures the value cannot go below zero
-   - Includes basic styling for readability
+## Introduction
+This project demonstrates a simple web application that reads a list of numbers from a file, sorts them using the Bubble Sort algorithm, and displays the sorted list along with the highest number. The user can also increase or decrease the highest number by 5 using buttons on the web page.
 
-## Technical Requirements:
-- Backend processing must be implemented in PHP
-- Frontend can use HTML5 features and JavaScript if necessary
-- The solution should be simple and efficient
+## Features
+- Reads a list of numbers from a file.
+- Sorts the numbers using the Bubble Sort algorithm.
+- Displays the sorted list of numbers.
+- Displays the highest number in the list.
+- Allows the user to increase or decrease the highest number by 5.
 
-## Getting Started
-
-### Option 1: Using Docker (Recommended)
-A Docker environment has been provided for your convenience.
-
-1. Make sure you have Docker and Docker Compose installed on your system
-2. Clone this repository
-3. Navigate to the repository directory
-4. Run `docker-compose up -d`
-5. Access the application at http://localhost:8080
-
-### Option 2: Local Setup
-If you prefer not to use Docker:
-
-1. Set up a local PHP environment (XAMPP, WAMP, MAMP, etc.)
-2. Clone this repository to your web server's document root
-3. Access the application via your local web server
-
-### Wireframe
-![wireframe](wireframe.jpg "how it might look")
-
-
-### Project Structure
+## Usage
+<!-- I used docker and docker compose -->
+1. Clone the repository.
+2. Run the following command to build the Docker image:
+```bash
+docker-compose up -d
 ```
-.
-├── docker-compose.yml         # Docker configuration
-├── data/                      # Data directory
-│   └── input.txt              # Input file with random numbers
-├── src/                       # Source code directory
-│   ├── index.php              # Main entry point
-│   └── css/                   # CSS files (if needed)
-└── README.md                  # This file
-```
+3. Open a web browser and navigate to `http://localhost:8080`.
 
-## Submission:
-- Create a git (Github/Gitlab) repository with your solution
-- Include a README.md explaining how to run your code and any design decisions
-- Ensure your code is well-commented and follows best practices
+## Interact with the web page
+- The sorted list of numbers will be displayed on the web page.
+- The highest number will be shown in an input field.
+- Use the `+5` and `-5` buttons to increase or decrease the highest number by 5.
 
-## Evaluation Criteria:
-- Correctness of the algorithm implementation
-- Understanding of time/space complexity
-- Proper use of PHP for backend processing
-- Efficient implementation of the increment/decrement functionality
-- Code organization and readability
-- Error handling
+## Technologies
+- PHP
+- HTML
+- CSS
+- JavaScript
+- Docker
+- Docker Compose
+
